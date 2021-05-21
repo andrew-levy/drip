@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD8566F9262E3E6F007BBD59 /* Color+EasyInitialize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8566F8262E3E6F007BBD59 /* Color+EasyInitialize.swift */; };
+		BD856701262E4D8E007BBD59 /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD856700262E4D8E007BBD59 /* ProgressRingView.swift */; };
+		BD856709262F0E62007BBD59 /* Double+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD856708262F0E62007BBD59 /* Double+Math.swift */; };
+		BD85670E262F148B007BBD59 /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85670D262F148B007BBD59 /* Date+Format.swift */; };
+		BD8567A52631B918007BBD59 /* BottleGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8567A42631B918007BBD59 /* BottleGridViewModel.swift */; };
+		BD8567B02631B9D0007BBD59 /* BottleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8567AF2631B9D0007BBD59 /* BottleModel.swift */; };
+		BD8567B52631BD68007BBD59 /* BottleCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8567B42631BD68007BBD59 /* BottleCardViewModel.swift */; };
+		BD8567BA263213A1007BBD59 /* NewBottleSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8567B9263213A1007BBD59 /* NewBottleSheetViewModel.swift */; };
+		BD8567CC26324635007BBD59 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8567CB26324635007BBD59 /* ProfileViewModel.swift */; };
+		BD8567D126324964007BBD59 /* BottleSheetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8567D026324964007BBD59 /* BottleSheetViewModel.swift */; };
+		BD8567D926324D0C007BBD59 /* AddButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8567D826324D0C007BBD59 /* AddButtonModel.swift */; };
+		BD8567DF26333337007BBD59 /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = BD8567DE26333337007BBD59 /* BottomSheet */; };
+		BD8567F426334D03007BBD59 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD8567F326334D03007BBD59 /* GoogleService-Info.plist */; };
+		BD8567FA26334F95007BBD59 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BD8567F926334F95007BBD59 /* FirebaseAuth */; };
+		BD8567FC26334F95007BBD59 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BD8567FB26334F95007BBD59 /* FirebaseFirestore */; };
+		BD8567FE26334F95007BBD59 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = BD8567FD26334F95007BBD59 /* FirebaseFirestoreSwift-Beta */; };
+		BD85680A2633505F007BBD59 /* UserRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8568092633505F007BBD59 /* UserRepo.swift */; };
+		BD85681426338150007BBD59 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85681326338150007BBD59 /* UserModel.swift */; };
+		BD899D21262939E10072F828 /* DripApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899D20262939E10072F828 /* DripApp.swift */; };
+		BD899D23262939E10072F828 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899D22262939E10072F828 /* ContentView.swift */; };
+		BD899D25262939EE0072F828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD899D24262939EE0072F828 /* Assets.xcassets */; };
+		BD899D28262939EE0072F828 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD899D27262939EE0072F828 /* Preview Assets.xcassets */; };
+		BD899D33262939EE0072F828 /* DripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899D32262939EE0072F828 /* DripTests.swift */; };
+		BD899D3E262939EE0072F828 /* DripUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899D3D262939EE0072F828 /* DripUITests.swift */; };
+		BD899D5026293A320072F828 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899D4F26293A320072F828 /* HomeView.swift */; };
+		BD899D5526293B2D0072F828 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899D5426293B2D0072F828 /* ProfileView.swift */; };
+		BD899D5F26293CC20072F828 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899D5E26293CC20072F828 /* MainView.swift */; };
+		BD899D6E2629CAC20072F828 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899D6D2629CAC20072F828 /* SignUpView.swift */; };
+		BD899D7C2629D2490072F828 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899D7B2629D2490072F828 /* SignInView.swift */; };
+		BD899D8E262A14D70072F828 /* BottleSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899D8D262A14D70072F828 /* BottleSheetView.swift */; };
+		BD899D93262A25CE0072F828 /* NewBottleSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899D92262A25CE0072F828 /* NewBottleSheet.swift */; };
+		BD899DA0262D177F0072F828 /* BottlesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899D9F262D177F0072F828 /* BottlesGridView.swift */; };
+		BD899DA5262D1D800072F828 /* BottleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899DA4262D1D800072F828 /* BottleCardView.swift */; };
+		BD899DAD262D248F0072F828 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899DAC262D248F0072F828 /* WeekView.swift */; };
+		BD899DBB262D3BAF0072F828 /* MovingNumbersView in Frameworks */ = {isa = PBXBuildFile; productRef = BD899DBA262D3BAF0072F828 /* MovingNumbersView */; };
+		BD899DC0262E003E0072F828 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899DBF262E003E0072F828 /* BarView.swift */; };
+		BD899DC5262E0A8C0072F828 /* ImagePickerSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD899DC4262E0A8C0072F828 /* ImagePickerSheetView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD899D2F262939EE0072F828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD899D15262939E10072F828 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD899D1C262939E10072F828;
+			remoteInfo = Drip;
+		};
+		BD899D3A262939EE0072F828 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD899D15262939E10072F828 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD899D1C262939E10072F828;
+			remoteInfo = Drip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD8566F8262E3E6F007BBD59 /* Color+EasyInitialize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+EasyInitialize.swift"; sourceTree = "<group>"; };
+		BD856700262E4D8E007BBD59 /* ProgressRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
+		BD856708262F0E62007BBD59 /* Double+Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Math.swift"; sourceTree = "<group>"; };
+		BD85670D262F148B007BBD59 /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
+		BD8567A42631B918007BBD59 /* BottleGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleGridViewModel.swift; sourceTree = "<group>"; };
+		BD8567AF2631B9D0007BBD59 /* BottleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleModel.swift; sourceTree = "<group>"; };
+		BD8567B42631BD68007BBD59 /* BottleCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleCardViewModel.swift; sourceTree = "<group>"; };
+		BD8567B9263213A1007BBD59 /* NewBottleSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBottleSheetViewModel.swift; sourceTree = "<group>"; };
+		BD8567CB26324635007BBD59 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		BD8567D026324964007BBD59 /* BottleSheetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleSheetViewModel.swift; sourceTree = "<group>"; };
+		BD8567D826324D0C007BBD59 /* AddButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonModel.swift; sourceTree = "<group>"; };
+		BD8567F326334D03007BBD59 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BD8568092633505F007BBD59 /* UserRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepo.swift; sourceTree = "<group>"; };
+		BD85681326338150007BBD59 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		BD899D1D262939E10072F828 /* Drip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD899D20262939E10072F828 /* DripApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DripApp.swift; sourceTree = "<group>"; };
+		BD899D22262939E10072F828 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BD899D24262939EE0072F828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD899D27262939EE0072F828 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD899D29262939EE0072F828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD899D2E262939EE0072F828 /* DripTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DripTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD899D32262939EE0072F828 /* DripTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DripTests.swift; sourceTree = "<group>"; };
+		BD899D34262939EE0072F828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD899D39262939EE0072F828 /* DripUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DripUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD899D3D262939EE0072F828 /* DripUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DripUITests.swift; sourceTree = "<group>"; };
+		BD899D3F262939EE0072F828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD899D4F26293A320072F828 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BD899D5426293B2D0072F828 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BD899D5E26293CC20072F828 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		BD899D6D2629CAC20072F828 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		BD899D7B2629D2490072F828 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		BD899D8D262A14D70072F828 /* BottleSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleSheetView.swift; sourceTree = "<group>"; };
+		BD899D92262A25CE0072F828 /* NewBottleSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBottleSheet.swift; sourceTree = "<group>"; };
+		BD899D9F262D177F0072F828 /* BottlesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottlesGridView.swift; sourceTree = "<group>"; };
+		BD899DA4262D1D800072F828 /* BottleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleCardView.swift; sourceTree = "<group>"; };
+		BD899DAC262D248F0072F828 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		BD899DBF262E003E0072F828 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		BD899DC4262E0A8C0072F828 /* ImagePickerSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerSheetView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD899D1A262939E10072F828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD899DBB262D3BAF0072F828 /* MovingNumbersView in Frameworks */,
+				BD8567FC26334F95007BBD59 /* FirebaseFirestore in Frameworks */,
+				BD8567FE26334F95007BBD59 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				BD8567FA26334F95007BBD59 /* FirebaseAuth in Frameworks */,
+				BD8567DF26333337007BBD59 /* BottomSheet in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD899D2B262939EE0072F828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD899D36262939EE0072F828 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD8566F7262E3E3E007BBD59 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD8566F8262E3E6F007BBD59 /* Color+EasyInitialize.swift */,
+				BD856708262F0E62007BBD59 /* Double+Math.swift */,
+				BD85670D262F148B007BBD59 /* Date+Format.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BD8567A22631B665007BBD59 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD8567AF2631B9D0007BBD59 /* BottleModel.swift */,
+				BD8567D826324D0C007BBD59 /* AddButtonModel.swift */,
+				BD85681326338150007BBD59 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD8567A32631B672007BBD59 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BD8567A42631B918007BBD59 /* BottleGridViewModel.swift */,
+				BD8567B42631BD68007BBD59 /* BottleCardViewModel.swift */,
+				BD8567B9263213A1007BBD59 /* NewBottleSheetViewModel.swift */,
+				BD8567CB26324635007BBD59 /* ProfileViewModel.swift */,
+				BD8567D026324964007BBD59 /* BottleSheetViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BD8568022633502E007BBD59 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BD8568092633505F007BBD59 /* UserRepo.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BD8568232638C981007BBD59 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BD899DA4262D1D800072F828 /* BottleCardView.swift */,
+				BD899D9F262D177F0072F828 /* BottlesGridView.swift */,
+				BD899D92262A25CE0072F828 /* NewBottleSheet.swift */,
+				BD899D8D262A14D70072F828 /* BottleSheetView.swift */,
+				BD899D4F26293A320072F828 /* HomeView.swift */,
+				BD856700262E4D8E007BBD59 /* ProgressRingView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BD8568242638C98C007BBD59 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BD899D5426293B2D0072F828 /* ProfileView.swift */,
+				BD899DC4262E0A8C0072F828 /* ImagePickerSheetView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BD8568252638C997007BBD59 /* Week */ = {
+			isa = PBXGroup;
+			children = (
+				BD899DAC262D248F0072F828 /* WeekView.swift */,
+				BD899DBF262E003E0072F828 /* BarView.swift */,
+			);
+			path = Week;
+			sourceTree = "<group>";
+		};
+		BD8568262638C9E8007BBD59 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				BD899D7B2629D2490072F828 /* SignInView.swift */,
+				BD899D6D2629CAC20072F828 /* SignUpView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		BD899D14262939E10072F828 = {
+			isa = PBXGroup;
+			children = (
+				BD899D1F262939E10072F828 /* Drip */,
+				BD899D31262939EE0072F828 /* DripTests */,
+				BD899D3C262939EE0072F828 /* DripUITests */,
+				BD899D1E262939E10072F828 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD899D1E262939E10072F828 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD899D1D262939E10072F828 /* Drip.app */,
+				BD899D2E262939EE0072F828 /* DripTests.xctest */,
+				BD899D39262939EE0072F828 /* DripUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD899D1F262939E10072F828 /* Drip */ = {
+			isa = PBXGroup;
+			children = (
+				BD8568022633502E007BBD59 /* Repositories */,
+				BD8567A32631B672007BBD59 /* ViewModels */,
+				BD8567A22631B665007BBD59 /* Models */,
+				BD8566F7262E3E3E007BBD59 /* Extensions */,
+				BD899D4E26293A0A0072F828 /* Views */,
+				BD899D20262939E10072F828 /* DripApp.swift */,
+				BD899D24262939EE0072F828 /* Assets.xcassets */,
+				BD899D29262939EE0072F828 /* Info.plist */,
+				BD8567F326334D03007BBD59 /* GoogleService-Info.plist */,
+				BD899D26262939EE0072F828 /* Preview Content */,
+			);
+			path = Drip;
+			sourceTree = "<group>";
+		};
+		BD899D26262939EE0072F828 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BD899D27262939EE0072F828 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD899D31262939EE0072F828 /* DripTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD899D32262939EE0072F828 /* DripTests.swift */,
+				BD899D34262939EE0072F828 /* Info.plist */,
+			);
+			path = DripTests;
+			sourceTree = "<group>";
+		};
+		BD899D3C262939EE0072F828 /* DripUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD899D3D262939EE0072F828 /* DripUITests.swift */,
+				BD899D3F262939EE0072F828 /* Info.plist */,
+			);
+			path = DripUITests;
+			sourceTree = "<group>";
+		};
+		BD899D4E26293A0A0072F828 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD8568262638C9E8007BBD59 /* Auth */,
+				BD8568252638C997007BBD59 /* Week */,
+				BD8568242638C98C007BBD59 /* Profile */,
+				BD8568232638C981007BBD59 /* Home */,
+				BD899D5E26293CC20072F828 /* MainView.swift */,
+				BD899D22262939E10072F828 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD899D1C262939E10072F828 /* Drip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD899D42262939EE0072F828 /* Build configuration list for PBXNativeTarget "Drip" */;
+			buildPhases = (
+				BD899D19262939E10072F828 /* Sources */,
+				BD899D1A262939E10072F828 /* Frameworks */,
+				BD899D1B262939E10072F828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Drip;
+			packageProductDependencies = (
+				BD899DBA262D3BAF0072F828 /* MovingNumbersView */,
+				BD8567DE26333337007BBD59 /* BottomSheet */,
+				BD8567F926334F95007BBD59 /* FirebaseAuth */,
+				BD8567FB26334F95007BBD59 /* FirebaseFirestore */,
+				BD8567FD26334F95007BBD59 /* FirebaseFirestoreSwift-Beta */,
+			);
+			productName = Drip;
+			productReference = BD899D1D262939E10072F828 /* Drip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD899D2D262939EE0072F828 /* DripTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD899D45262939EE0072F828 /* Build configuration list for PBXNativeTarget "DripTests" */;
+			buildPhases = (
+				BD899D2A262939EE0072F828 /* Sources */,
+				BD899D2B262939EE0072F828 /* Frameworks */,
+				BD899D2C262939EE0072F828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD899D30262939EE0072F828 /* PBXTargetDependency */,
+			);
+			name = DripTests;
+			productName = DripTests;
+			productReference = BD899D2E262939EE0072F828 /* DripTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD899D38262939EE0072F828 /* DripUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD899D48262939EE0072F828 /* Build configuration list for PBXNativeTarget "DripUITests" */;
+			buildPhases = (
+				BD899D35262939EE0072F828 /* Sources */,
+				BD899D36262939EE0072F828 /* Frameworks */,
+				BD899D37262939EE0072F828 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD899D3B262939EE0072F828 /* PBXTargetDependency */,
+			);
+			name = DripUITests;
+			productName = DripUITests;
+			productReference = BD899D39262939EE0072F828 /* DripUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD899D15262939E10072F828 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					BD899D1C262939E10072F828 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					BD899D2D262939EE0072F828 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = BD899D1C262939E10072F828;
+					};
+					BD899D38262939EE0072F828 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = BD899D1C262939E10072F828;
+					};
+				};
+			};
+			buildConfigurationList = BD899D18262939E10072F828 /* Build configuration list for PBXProject "Drip" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD899D14262939E10072F828;
+			packageReferences = (
+				BD899DB9262D3BAF0072F828 /* XCRemoteSwiftPackageReference "MovingNumbersView" */,
+				BD8567DD26333337007BBD59 /* XCRemoteSwiftPackageReference "bottom-sheet" */,
+				BD8567F826334F95007BBD59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = BD899D1E262939E10072F828 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD899D1C262939E10072F828 /* Drip */,
+				BD899D2D262939EE0072F828 /* DripTests */,
+				BD899D38262939EE0072F828 /* DripUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD899D1B262939E10072F828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD899D28262939EE0072F828 /* Preview Assets.xcassets in Resources */,
+				BD899D25262939EE0072F828 /* Assets.xcassets in Resources */,
+				BD8567F426334D03007BBD59 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD899D2C262939EE0072F828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD899D37262939EE0072F828 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD899D19262939E10072F828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD85670E262F148B007BBD59 /* Date+Format.swift in Sources */,
+				BD899DC0262E003E0072F828 /* BarView.swift in Sources */,
+				BD899D5F26293CC20072F828 /* MainView.swift in Sources */,
+				BD85681426338150007BBD59 /* UserModel.swift in Sources */,
+				BD8567B02631B9D0007BBD59 /* BottleModel.swift in Sources */,
+				BD8567A52631B918007BBD59 /* BottleGridViewModel.swift in Sources */,
+				BD899D5526293B2D0072F828 /* ProfileView.swift in Sources */,
+				BD8566F9262E3E6F007BBD59 /* Color+EasyInitialize.swift in Sources */,
+				BD856709262F0E62007BBD59 /* Double+Math.swift in Sources */,
+				BD899D5026293A320072F828 /* HomeView.swift in Sources */,
+				BD899DC5262E0A8C0072F828 /* ImagePickerSheetView.swift in Sources */,
+				BD8567D126324964007BBD59 /* BottleSheetViewModel.swift in Sources */,
+				BD85680A2633505F007BBD59 /* UserRepo.swift in Sources */,
+				BD8567B52631BD68007BBD59 /* BottleCardViewModel.swift in Sources */,
+				BD899DAD262D248F0072F828 /* WeekView.swift in Sources */,
+				BD8567BA263213A1007BBD59 /* NewBottleSheetViewModel.swift in Sources */,
+				BD899D23262939E10072F828 /* ContentView.swift in Sources */,
+				BD8567CC26324635007BBD59 /* ProfileViewModel.swift in Sources */,
+				BD856701262E4D8E007BBD59 /* ProgressRingView.swift in Sources */,
+				BD8567D926324D0C007BBD59 /* AddButtonModel.swift in Sources */,
+				BD899DA5262D1D800072F828 /* BottleCardView.swift in Sources */,
+				BD899D6E2629CAC20072F828 /* SignUpView.swift in Sources */,
+				BD899DA0262D177F0072F828 /* BottlesGridView.swift in Sources */,
+				BD899D7C2629D2490072F828 /* SignInView.swift in Sources */,
+				BD899D93262A25CE0072F828 /* NewBottleSheet.swift in Sources */,
+				BD899D21262939E10072F828 /* DripApp.swift in Sources */,
+				BD899D8E262A14D70072F828 /* BottleSheetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD899D2A262939EE0072F828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD899D33262939EE0072F828 /* DripTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD899D35262939EE0072F828 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD899D3E262939EE0072F828 /* DripUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD899D30262939EE0072F828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD899D1C262939E10072F828 /* Drip */;
+			targetProxy = BD899D2F262939EE0072F828 /* PBXContainerItemProxy */;
+		};
+		BD899D3B262939EE0072F828 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD899D1C262939E10072F828 /* Drip */;
+			targetProxy = BD899D3A262939EE0072F828 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BD899D40262939EE0072F828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD899D41262939EE0072F828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD899D43262939EE0072F828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Drip/Preview Content\"";
+				DEVELOPMENT_TEAM = 9FT6GHSXM9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Drip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.levy.Drip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD899D44262939EE0072F828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Drip/Preview Content\"";
+				DEVELOPMENT_TEAM = 9FT6GHSXM9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Drip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.levy.Drip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD899D46262939EE0072F828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FT6GHSXM9;
+				INFOPLIST_FILE = DripTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.levy.DripTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drip.app/Drip";
+			};
+			name = Debug;
+		};
+		BD899D47262939EE0072F828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FT6GHSXM9;
+				INFOPLIST_FILE = DripTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.levy.DripTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Drip.app/Drip";
+			};
+			name = Release;
+		};
+		BD899D49262939EE0072F828 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FT6GHSXM9;
+				INFOPLIST_FILE = DripUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.levy.DripUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Drip;
+			};
+			name = Debug;
+		};
+		BD899D4A262939EE0072F828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9FT6GHSXM9;
+				INFOPLIST_FILE = DripUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.levy.DripUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Drip;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD899D18262939E10072F828 /* Build configuration list for PBXProject "Drip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD899D40262939EE0072F828 /* Debug */,
+				BD899D41262939EE0072F828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD899D42262939EE0072F828 /* Build configuration list for PBXNativeTarget "Drip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD899D43262939EE0072F828 /* Debug */,
+				BD899D44262939EE0072F828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD899D45262939EE0072F828 /* Build configuration list for PBXNativeTarget "DripTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD899D46262939EE0072F828 /* Debug */,
+				BD899D47262939EE0072F828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD899D48262939EE0072F828 /* Build configuration list for PBXNativeTarget "DripUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD899D49262939EE0072F828 /* Debug */,
+				BD899D4A262939EE0072F828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD8567DD26333337007BBD59 /* XCRemoteSwiftPackageReference "bottom-sheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weitieda/bottom-sheet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+		BD8567F826334F95007BBD59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+		BD899DB9262D3BAF0072F828 /* XCRemoteSwiftPackageReference "MovingNumbersView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aunnnn/MovingNumbersView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD8567DE26333337007BBD59 /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD8567DD26333337007BBD59 /* XCRemoteSwiftPackageReference "bottom-sheet" */;
+			productName = BottomSheet;
+		};
+		BD8567F926334F95007BBD59 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD8567F826334F95007BBD59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		BD8567FB26334F95007BBD59 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD8567F826334F95007BBD59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		BD8567FD26334F95007BBD59 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD8567F826334F95007BBD59 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		BD899DBA262D3BAF0072F828 /* MovingNumbersView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD899DB9262D3BAF0072F828 /* XCRemoteSwiftPackageReference "MovingNumbersView" */;
+			productName = MovingNumbersView;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BD899D15262939E10072F828 /* Project object */;
+}
